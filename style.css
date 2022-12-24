@@ -1,0 +1,218 @@
+@charset "UTF-8";  
+/*Cores para ser usada no site:
+ 1  - #1B9451 
+ 2  - #61FFA8
+ 3  - #3FE088
+ 4  - #94180C 
+ 5  - #E04D3F
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@100&display=swap');
+
+@font-face {
+    font-family: android;
+    src: url(./fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+:root{
+    --co0:#e0d48f;
+    --co1:#83e1ad;
+    --co2:#3ddc84;
+    --co3:#2fa866;
+    --co4:#1a5c37;
+    --co5:#063d1e;
+
+    --fonte-padrao: Arial,Verdana,Helvetica,sans-serif;
+    --fonte-destaque:'Bebas Neue','cursive';
+    --fonte-android: "android",'cursive'
+}
+*{
+    margin:0px;
+    padding:0px;
+}
+
+html {
+    height: 100vh;
+}
+
+div.video{
+    background-color: var(--co5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+div.video>iframe{
+    position: absolute;
+    top: 5%;
+    left:5%;
+    width: 90%;
+    height: 90%;
+}
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+main strong{
+    text-decoration: none;
+    color: var(--co4);
+    font-weight: bold;
+
+}
+main a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+main a:hover{
+    text-decoration: underline;
+    color: #1B9451;
+}
+
+
+body{
+    background-color: var(--co0);
+    font-family: var(--fonte-padrao)
+}
+a.externo::after{
+    content: '\1F517';
+}
+
+header{
+    margin:auto;
+    background-image: linear-gradient(to bottom,var(--co3),var(--co5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+
+}
+header > h1 {
+    margin: auto;
+    color: white;
+    font-weight: normal;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+header> p{
+    font-family:'Jost', sans-serif;;
+    font-size: 1.2em;
+    color: white;
+    font-weight: bolder;
+
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    padding-bottom: 50px;
+   
+}
+nav{
+    text-align:left  ;
+    background-color: var(--co5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.418);
+
+}
+
+nav>a{
+    color: var(--co1);
+    
+
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+    padding: 10px;
+   
+}
+nav>a:hover{
+    
+    color: white;
+    background-color: var(--co4);
+    
+
+
+}
+/*========================================================================*/
+main{
+    min-width: 100px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1{
+    color: var(--co5);
+    font-weight: normal;
+    font-family: var(--fonte-android);
+    font-size: 1.8em;
+}
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 300px;
+    display: block;
+    margin: auto;
+}
+
+main h2{
+    color: var(--co4);
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.3em;
+    background-image: linear-gradient(to right,var(--co1),transparent);
+}
+/*========================================================================*/
+footer{
+    font-family: 'Jost', sans-serif;
+    font-weight: bolder;
+    
+    text-align: center;
+    background-color:var(--co5);
+    color: white;
+    font-size: 1em;
+    padding: 5px;
+}
+footer a{
+
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--co1);
+}
+
+aside > h3{
+    background-color: var(--co4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+
+
+
+}
+
+aside{
+    background-color: var(--co1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow:3px 3px 8px rgba(0, 0, 0, 0.445) ;
+   
+}
+aside > ul{
+    list-style: inside;
+    columns: 2;
+}
