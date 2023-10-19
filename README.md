@@ -1,5 +1,5 @@
 
-![PRÉVIA-3](https://github.com/camilyolivei/siteandroidd/assets/120147200/f51506c7-fda7-42e4-a055-88d5c6a89f4b)
+![previa3](https://github.com/camilyolivei/siteandroidd/assets/120147200/66cf4480-410f-4f62-a1f9-266531df0e8f)
 
 - [Visualizar site completo](https://camilyolivei.github.io/siteandroidd/)<br/>
 
